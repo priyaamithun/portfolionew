@@ -1,20 +1,19 @@
 import React from 'react';
-import "./Header.css";
-class Header extends React.Component {
-  
-    render(){
-return(
-        <div>
-<div className="menu-things">
-<ul className="list-items">
-    <li>menu</li>
-    <li>about</li>
-    <li>contact</li>
+import './Header.css';
+import Nav from './Nav';
 
-</ul>
+class Header extends React.Component {
+    state = {  }
+    render() { 
+        return ( 
+<div className="header">
+<img src={require('./banner.png')} alt=""/>
+
+    <Nav/>
 </div>
-        </div>
-          );
+
+
+         );
     }
 }
  
