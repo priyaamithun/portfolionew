@@ -8,11 +8,13 @@ class Main extends React.Component {
     render() { 
         return ( 
         <div className="container">
-<div className="box">
-<div className="thumb">
 
+<div className="box">
+
+<div className="thumb">
 <img src={require('./calculator.jpg')} alt=""/>
 </div>
+
 <div className="detail">
 <div className="contentsNew">
 <i class="fas fa-calculator"></i>
@@ -21,21 +23,23 @@ class Main extends React.Component {
 
 </div>
 </div>
+
 </div>
 
 <div className="box">
-<div className="thumb">
 
+<div className="thumb">
 <img src={require('./recipes.jpg')} alt=""/>
 </div>
+
 <div className="detail">
 <div className="contentsNew">
 <i class="fas fa-utensils"></i>
 <h3>Recipes</h3>
 <a href="#">Read More</a>
+</div>
+</div>
 
-</div>
-</div>
 </div>
 
 
@@ -69,16 +73,7 @@ class Main extends React.Component {
 </div>
 </div>
 </div>
-
-
-
-
-
-
-
-
-            
-        </div> );
+   </div> );
     }
 }
  

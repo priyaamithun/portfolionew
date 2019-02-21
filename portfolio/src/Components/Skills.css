@@ -1,0 +1,61 @@
+
+#skills{
+    background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../Images/alphabet-design-game-1591058.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+
+    }
+    
+.title{
+  height:500px;
+  color: white;
+  font-style: italic;
+}
+.title > div{
+  margin:2rem;
+}
+
+.skill-container >.containers{
+  margin-top:2rem;
+}
+.containers {
+    width: 80%;
+    background-color:goldenrod;
+    height:25px;
+    display: flex;
+}
+  
+.skills {
+    padding:10x;
+    text-align: right;
+    color: white;
+  }
+  .skillbar-background{
+height:25px;
+    background-color:darkgrey;
+  }
+
+  .css {width: 70%;
+  }
+  .react {width: 60%;
+  }
+  .js {width: 65%; 
+  }
+  .java {width: 60%; 
+  }
+  .git {width: 60%;
+  }
+  .sass {width:60%;
+  }
+  .jq {width:60%; 
+  }
+  @media only screen and (min-width: 768px){
+.skill-container{
+  margin-right:3rem;
+}
+.title{
+  margin-left: 6rem;
+}
+  }

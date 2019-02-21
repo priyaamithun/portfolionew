@@ -6,20 +6,23 @@ const AboutMe = ()=> (
 
 <div className="about">
 
-<div className="content_inner">
-<div className="section-a">
-<h1>About Me </h1>
-<hr/>
-<p>I'm Priya - Front end developer</p>
+<img src={require("../Images/profile.jpg")} alt=""/>
+<div className="section-b">
+<h4>About Me</h4>
+<p>
+Im a front end developer
+I have a passion for programming which i have demonstrated through years of self <br/>study and my initiative
+in finding freelance clients as well as creating my own projects.
+</p>
+<button className="hire AboutMebtn">Hire Me</button>
+<button className="download AboutMebtn">Resume</button>
+<div className="contact">
+<a href="#"><i className="fab fa-linkedin-in"></i></a>
+<a href="#"><i className="fas fa-envelope"></i></a>
+<a href="#"><i className="fab fa-github"></i></a>
 
-
-<span className="smiley-container"><i className="far fa-grin-wink fa-5x"></i></span>
-
-<div className="skills">
-<p>I design and develop amazing websites</p>
 </div>
 </div>
-        </div>
         </div>
         
           

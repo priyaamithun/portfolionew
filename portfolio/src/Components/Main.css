@@ -1,12 +1,12 @@
 
 .container{
-    position: absolute;
-    margin-top:100px;
-    left:14%;
-    transform: translate(-5%, -10%);
-    width:1000px;
+    position: relative;
+    /* margin-top:510px; */
+    /* transform: translate(-5%, -10%); */
+    width:100%;
     height:500px;
     display: flex;
+   
 
 }
 .container .box{
@@ -113,10 +113,11 @@ left:0;
                       }
  @media only screen and (max-width: 1000px){
     .container{
-        width:600px;
+        width:100%;
         height:auto;
         padding:20px;
         box-sizing: border-box;
+        
     }
     .container .box{
         height:250px;
@@ -126,9 +127,13 @@ left:0;
     }
 }
 
+
 @media only screen and (max-width: 768px){
 .container{
-    display: initial;
+display:block;
+
+margin:10px auto;
+
 }
 .container .box{
     width:50%;
@@ -140,8 +145,7 @@ left:0;
 
 @media only screen and (max-width: 480px){
     .container{
-    top:100px;
-    left:0;
+
     transform: translate(0);
     }
     .container .box{
@@ -150,4 +154,4 @@ left:0;
         float: none;
         
     }
-    }
+    } 

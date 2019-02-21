@@ -4,11 +4,16 @@
     font-weight: 300;
     font-size: 12px;
   }
- 
+  .Navigation{
+    display:grid;
+grid-template-columns: repeat(4,1fr);
+grid-gap: 1em;
+align-items: center;
+text-align: center;
+  }
  .Navigation input + label {
     position: fixed;
-    top: 40px;
-    right: 70%;
+    top: 30px;
     height: 20px;
     width: 20px; 
     z-index: 5;
@@ -18,123 +23,102 @@
       width: 100%;
       height: 2px;
       top: 50%;
+      margin-left:30px;
       margin-top: -15px;
-      right: 280px;
-      display: block;
+      float: left;
+      /* display: block; */
       background: white;
       transition: .5s;
-  
     }
-    .Navigation input + label span:first-child {
-      top: 4px; 
-    }
-    .Navigation input + label span:last-child {
+ .Navigation input + label span:first-child {
+   top: 4px; 
+  }
+.Navigation input + label span:last-child {
       top: 16px; 
-    }  
-       
-  
-    .Navigation input + label:hover {
+    }    
+.Navigation input + label:hover {
     cursor: pointer;
   }
-  
 .Navigation input:checked + label span {
       opacity: 0;
       top: 50%;
     }
-    
-   .Navigation input:checked + label span:first-child {
-        
-      opacity: 1;
+.Navigation input:checked + label span:first-child {
+       opacity: 1;
       transform: rotate(405deg);
-    }
-  
-  .Navigation input:checked + label span:last-child {
+    }  
+.Navigation input:checked + label span:last-child {
       opacity: 1;
       transform: rotate(-405deg);
-    }
-   
-  
-  .Navigation input ~ .navbar {
+}
+.Navigation input ~ .navbar {
     position: fixed;
-    top: 0;
-    /* right: 120px; */
+    top: 0px;
     width: 100%;
-    height: 60px;
+    height: 50px;
     z-index: 3;
     transition: .5s;
     transition-delay: .5s;
     overflow: hidden;
-    
-
-
-  }
-
- 
-  .Navigation input ~ nav  ul {
-      position: absolute;
-      left: 60%;
-      right: 20%;
-    top:3%;
-
-    
-  }
-  .Navigation input ~ nav  ul li {
-        opacity: 0;
-        transition: .5s;
-        transition-delay: 0s;
-        list-style: none;
-        display: inline;
-        margin:10px;
-        transition: width 2s;
-        transition-timing-function: ease;
-        /* background: rgba(71, 69, 69, 0.5);  */
-
-
+} 
+.Navigation input ~ nav  ul {
+position: absolute;
+left: 10%;
+right: 20%;
+top:3%;
+margin-top:10px;    
 }
-
-        .Navigation input ~ nav  ul li a {
-          text-decoration: none;
-          text-transform: uppercase;
-          color: white;
-          font-weight: normal;
-          font-family: sans-serif;
-          padding: 10px;
-          list-style: none;
-          display: inline;
-          font-style: italic;
-          font-family: 'Oswald', sans-serif;
-          font-size:1.5rem;
-
-
-
-        }
-        .Navigation input ~ nav  ul li a:hover {
+.Navigation input ~ nav  ul li {
+opacity: 0;
+transition: .5s;
+transition-delay: 0s;
+list-style: none;
+display: inline;
+margin:10px;
+transition: width 2s;
+transition-timing-function: ease;
+}
+.Navigation input ~ nav  ul li a {
+text-decoration: none;
+text-transform: uppercase;
+color: white;
+font-weight: normal;
+font-family: sans-serif;
+padding: 10px;
+list-style: none;
+/* display: inline; */
+font-style: italic;
+font-family: 'Oswald', sans-serif;
+font-size:1.1rem;
+}
+.Navigation input ~ nav  ul li a:hover {
 text-decoration:underline;
-
-        }
-
-      .Navigation  input:checked ~ nav { 
-        
-            transition-delay: 0s;
-            background: rgba(71, 69, 69, 0.5); 
-
-      }
-      .Navigation  input:checked ~ nav ul li {
-                opacity: 1;
-                transition-delay: .5s;
-        
-
-                
-              }
-              .Navigation  input:checked ~ nav ul li {
+}
+.Navigation  input:checked ~ nav {
+  padding-bottom: 10px; 
+background-color: #333;
+transition-delay: 0s;
+}
+.Navigation  input:checked ~ nav ul li {
+opacity: 1;
+ transition-delay: .5s;
+}
+.Navigation  input:checked ~ nav ul li {
 list-style: none;
 }
-         
-              
-          input[type='checkbox'] {
-              position: fixed;
-              display: none;
-            }
-      
+ input[type='checkbox'] {
+position: fixed;
+display: none;
+}
+@media only screen and (min-width: 768px){
+
+  .Navigation input ~ nav  ul li a {
+font-size:1.5rem;
+  }
+.Navigation input + label {
+    height: 20px;
+    width: 22px; 
+ }
+}
 
 

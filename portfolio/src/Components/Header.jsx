@@ -7,8 +7,9 @@ class Header extends React.Component {
     render() { 
         return ( 
 <div className="header">
+<div className="header-img">
 <img src={require('./banner.png')} alt=""/>
-
+</div>
     <Nav/>
 </div>
 
